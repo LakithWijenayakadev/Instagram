@@ -12,7 +12,8 @@ export const Styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        
+        borderBottomWidth: 0.5,
+        borderColor: COLORS.borders
     },
     logoFont: {
         fontSize: 24,
@@ -32,8 +33,8 @@ export const Styles = StyleSheet.create({
     },
 
     storyContainer: {
-        // alignItems: 'center',
-        // flexDirection: 'row'
+        borderBottomWidth: 0.5,
+        borderColor: COLORS.borders
     },
 
     // story styles
@@ -46,7 +47,7 @@ export const Styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 5,
-        marginHorizontal:5
+        marginHorizontal: 5
     },
     storyOutline: {
         backgroundColor: COLORS.white,
@@ -57,9 +58,74 @@ export const Styles = StyleSheet.create({
         justifyContent: 'center'
     },
     storyProfilePic: {
-        backgroundColor: "red",
+        backgroundColor: COLORS.yellow,
         height: (window.width) * 0.14,
         width: (window.width) * 0.14,
         borderRadius: 100
+    },
+    // Posts
+    PostsMainStyle: {
+        padding: 7,
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        borderBottomWidth: 0.5,
+        borderColor: COLORS.borders
+    },
+    postProfilePic: {
+        backgroundColor: COLORS.red,
+        height: 40,
+        width: 40,
+        borderRadius: 100,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    postTopIcons: {
+        flex: 0.05,
+        flexDirection: 'row',
+        justifyContent: 'space-around'
+    },
+    postStyle: {
+
+        height: (window.width) * 1
+    },
+    saveIconPost: {
+        flex: 0.1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    PostsButtonstyle: {
+        paddingHorizontal: 7,
+        paddingVertical: 9,
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        // borderBottomWidth: 0.5,
+        // borderColor: COLORS.borders
+    },
+    postFontRegular: {
+        color: COLORS.black,
+        fontSize: 13
+    },
+    postFontBold: {
+        color: COLORS.black,
+        fontSize: 13,
+        fontWeight: '700'
+    },
+    postmore: {
+
+        fontSize: 13,
+        color: COLORS.grayFont
+    },
+    postButtonList: {
+        flex: 0.26,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+    },
+    postDetailsMain: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginVertical: 3
     }
 });

@@ -8,6 +8,6 @@ export default configureStore({
   reducer: {
 
     FeedList: FeedListReducer,
-    StoryList:StoryListReducer
+    StoryList: StoryListReducer
   }
 })

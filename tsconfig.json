@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "useUnknownInCatchVariables": false,
+  },
+  "extends": "@tsconfig/react-native/tsconfig.json"
+}

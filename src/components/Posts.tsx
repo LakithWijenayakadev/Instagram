@@ -12,7 +12,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import COLORS from "../styles/Colors";
 
 const window = Dimensions.get('window');
-export default function Posts() {
+export default function Posts({ ProfilePic, PostImage }) {
     return (
         <View>
 
@@ -23,7 +23,7 @@ export default function Posts() {
                     <View style={Styles.postProfilePic}>
                         <View style={[Styles.postProfilePic, { height: 37, width: 37, backgroundColor: COLORS.white }]}>
                             <View style={[Styles.postProfilePic, { height: 34, width: 34, backgroundColor: COLORS.yellow }]}>
-                                <Image source={sampleProfilePic} resizeMode='cover' style={[Styles.postProfilePic, { height: 34, width: 34, }]} ></Image>
+                                <Image source={ProfilePic} resizeMode='cover' style={[Styles.postProfilePic, { height: 34, width: 34, }]} ></Image>
                             </View>
                         </View>
                     </View>
@@ -40,7 +40,7 @@ export default function Posts() {
 
             {/* Post */}
             <View >
-                <Image source={samplePostImage} resizeMode='cover' style={Styles.postStyle} ></Image>
+                <Image source={PostImage} resizeMode='contain' style={Styles.postStyle} ></Image>
             </View>
 
             {/* Post Like ,share,comment, save */}
@@ -74,7 +74,7 @@ export default function Posts() {
                 {/* First row */}
 
                 <View style={Styles.postDetailsMain}>
-                    <View style={{ height: 20, width: 20, backgroundColor: 'red', borderRadius: 100 }}></View>
+                    <Image source={ProfilePic} style={{ height: 20, width: 20, backgroundColor: 'red', borderRadius: 100 }}></Image>
                     <View style={{ marginHorizontal: 5 }}>
                         <Text style={Styles.postFontRegular}>Liked by <Text style={Styles.postFontBold}>supun_madushanka
                         </Text> and <Text style={Styles.postFontBold}>6,217 others</Text></Text>

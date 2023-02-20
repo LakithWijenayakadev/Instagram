@@ -58,7 +58,7 @@ export const Styles = StyleSheet.create({
         justifyContent: 'center'
     },
     storyProfilePic: {
-        backgroundColor: COLORS.yellow,
+        backgroundColor: COLORS.white,
         height: (window.width) * 0.14,
         width: (window.width) * 0.14,
         borderRadius: 100
@@ -86,7 +86,7 @@ export const Styles = StyleSheet.create({
         justifyContent: 'space-around'
     },
     postStyle: {
-
+        width: (window.width) * 1,
         height: (window.width) * 1
     },
     saveIconPost: {
